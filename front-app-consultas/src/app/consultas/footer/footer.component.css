@@ -1,0 +1,17 @@
+.footer {
+    background-color: #020F59;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+  }
+  
+  .line {
+  
+    border-top: 1px solid white;
+    width: 135px;
+    height: 5px;
+    border-radius: 100px;
+    background: #FFF;
+    margin: 0 auto;
+  }

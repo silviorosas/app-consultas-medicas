@@ -21,6 +21,11 @@ import { IndexComponent } from './index/index.component';
 import { SendEmailComponent } from './changepassword/send-email.component';
 import { ChangePasswordComponent } from './changepassword/change-password.component';
 import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './consultas/home/home.component';
+import { FooterComponent } from './consultas/footer/footer.component';
+import { LoginConsultasComponent } from './consultas/login-consultas/login-consultas.component';
+import { RegisterConsultasComponent } from './consultas/register-consultas/register-consultas.component';
+import { StartConsultasComponent } from './consultas/start-consultas/start-consultas.component';
 
 
 
@@ -39,7 +44,12 @@ import { MenuComponent } from './menu/menu.component';
     MenuComponent,
     IndexComponent,
     SendEmailComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    HomeComponent,
+    FooterComponent,
+    LoginConsultasComponent,
+    RegisterConsultasComponent,
+    StartConsultasComponent
    
   ],
   imports: [
