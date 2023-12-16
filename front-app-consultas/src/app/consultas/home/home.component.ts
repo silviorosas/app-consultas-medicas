@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private renderer: Renderer2, private elRef: ElementRef) { }
 
   ngOnInit(): void {
+    this.renderer.listen(this.elRef.nativeElement, 'click', () => {
+      window.location.href = 'http://localhost:4200/start-consultas';
+    });
   }
 
 }

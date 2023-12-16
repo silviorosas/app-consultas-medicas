@@ -20,7 +20,7 @@ import { StartConsultasComponent } from './consultas/start-consultas/start-consu
 
 
 const routes: Routes = [
-  { path: '', component: IndexComponent },
+  { path: '', component:IndexComponent },
   { path: 'login', component: LoginComponent, canActivate: [LoginGuard] },
   { path: 'registro', component: RegistroComponent, canActivate: [LoginGuard] },
   { path: 'sendemail', component: SendEmailComponent, canActivate: [LoginGuard] },
@@ -30,11 +30,11 @@ const routes: Routes = [
   { path: 'nuevo', component: NuevoProductoComponent, canActivate: [ProdGuardService], data: { expectedRol: ['admin'] } },
   { path: 'editar/:id', component: EditarProductoComponent, canActivate: [ProdGuardService], data: { expectedRol: ['admin'] } },
   
-
+  { path: 'start-consultas', component:StartConsultasComponent, canActivate: [LoginGuard] },
   { path: 'home-consultas', component:HomeComponent, canActivate: [LoginGuard] },
   { path: 'login-consultas', component:LoginConsultasComponent, canActivate: [LoginGuard] },
   { path: 'register-consultas', component:RegisterConsultasComponent, canActivate: [LoginGuard] },
-  { path: 'start-consultas', component:StartConsultasComponent, canActivate: [LoginGuard] },
+  
   
   
   { path: '**', redirectTo: '', pathMatch: 'full' }
