@@ -26,6 +26,8 @@ import { FooterComponent } from './consultas/footer/footer.component';
 import { LoginConsultasComponent } from './consultas/login-consultas/login-consultas.component';
 import { RegisterConsultasComponent } from './consultas/register-consultas/register-consultas.component';
 import { StartConsultasComponent } from './consultas/start-consultas/start-consultas.component';
+import { DasboardComponent } from './consultas/dasboard/dasboard.component';
+import { CrearConsultasComponent } from './consultas/crear-consultas/crear-consultas.component';
 
 
 
@@ -49,7 +51,9 @@ import { StartConsultasComponent } from './consultas/start-consultas/start-consu
     FooterComponent,
     LoginConsultasComponent,
     RegisterConsultasComponent,
-    StartConsultasComponent
+    StartConsultasComponent,
+    DasboardComponent,
+    CrearConsultasComponent
    
   ],
   imports: [

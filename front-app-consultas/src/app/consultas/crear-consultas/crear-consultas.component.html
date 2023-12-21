@@ -1,0 +1,41 @@
+ <nav class="navbar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="Icono de suma">
+        <span class="medconecta">Med<span class="ciam">Conecta</span></span>
+      </div>
+    </nav>
+
+<section class="home">
+    <div class="content">
+        <div class="superior">
+            <img src="assets/consulta.png" alt="icono">
+            <div class="loader">
+                <div class="gray-line"></div>
+                <div class="green-line"></div>
+            </div>
+        </div>
+        <h1>Realizar Consulta</h1>
+        <div class="form">
+            <form [formGroup]="consultaForm" (ngSubmit)="crearConsultaDni()" novalidate>
+            <label for="descripcion">Ingrese breve descripción de su cunsulta</label>
+            <input type="text" id="descripcion" name="descripcion" formControlName="descripcion" required>
+            <label for="dniPaciente">Ingrese D.N.I.</label>
+            <input type="text" id="dniPaciente" value="dniPaciente" formControlName="dniPaciente" required>
+            <label for="password">Seleccione un Médico</label>      
+            <select class="form-control" id="idMedico" formControlName="idMedico">
+                <option *ngFor="let medico of medicos" [value]="medico.id">{{ medico.nombre }}-Especialidad: {{medico.especialidad}}</option>
+            </select>
+            <label for="fecha">Ingrese fecha y hora de consulta</label>
+            <input type="datetime-local" id="fecha" name="fecha" formControlName="fecha" required>
+                       
+ <br>
+ <br>
+            <button class="orange-button" >
+            <i class="fas fa-sign-in-alt"></i> Enviar</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+ <app-footer></app-footer>

@@ -16,6 +16,8 @@ import { HomeComponent } from './consultas/home/home.component';
 import { LoginConsultasComponent } from './consultas/login-consultas/login-consultas.component';
 import { RegisterConsultasComponent } from './consultas/register-consultas/register-consultas.component';
 import { StartConsultasComponent } from './consultas/start-consultas/start-consultas.component';
+import { DasboardComponent } from './consultas/dasboard/dasboard.component';
+import { CrearConsultasComponent } from './consultas/crear-consultas/crear-consultas.component';
 
 
 
@@ -34,6 +36,9 @@ const routes: Routes = [
   { path: 'home-consultas', component:HomeComponent, canActivate: [LoginGuard] },
   { path: 'login-consultas', component:LoginConsultasComponent, canActivate: [LoginGuard] },
   { path: 'register-consultas', component:RegisterConsultasComponent, canActivate: [LoginGuard] },
+  { path: 'dashboard', component:DasboardComponent, canActivate: [ProdGuardService], data: { expectedRol: ['admin', 'user'] } },
+  { path: 'crear-consulta', component:CrearConsultasComponent, canActivate: [ProdGuardService], data: { expectedRol: ['admin','user'] } },
+
   
   
   

@@ -33,7 +33,7 @@ export class LoginConsultasComponent implements OnInit {
       data => {
         this.tokenService.setToken(data.token);
         this.toastr.success("Login exitoso!")
-        this.router.navigate(['/']);
+        this.router.navigate(['dashboard']);
       },
       err => {         
         this.toastr.error('Nombre de Usuario o Contraseña incorrecta.','Error', {
@@ -41,7 +41,9 @@ export class LoginConsultasComponent implements OnInit {
         });
       }
     );
+
   }
+
 
 
 }
