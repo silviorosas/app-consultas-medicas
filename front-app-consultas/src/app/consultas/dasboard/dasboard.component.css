@@ -110,7 +110,7 @@ body {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 60%; /* Ancho del modal */
+  width: 90%; /* Ancho del modal */
   max-width: 400px; /* Máximo ancho del modal */
 }
 
@@ -139,6 +139,7 @@ input[type="text"] {
   border: 1px solid #007bff; /* Cambia el color a azul primary */
   padding: 8px;
   border-radius: 8px; /* Border radius de 8px */
+  width: 85%;
 }
 
 /* Estilo para el botón */
@@ -151,6 +152,7 @@ button {
   border-radius: 10px; /* Border radius de 8px */
   margin-left: 0px; /* Espacio de 8px a la izquierda */
   margin-bottom: 6px;
+  width: 85%;
 }
 
 

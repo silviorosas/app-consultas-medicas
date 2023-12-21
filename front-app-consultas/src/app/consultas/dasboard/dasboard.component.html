@@ -44,10 +44,10 @@
 <div class="modal" [style.display]="modalVisible ? 'block' : 'none'">
     <div class="modal-content">
       <span  class="close" (click)="cerrarModal()"> &times;</span>
-      <h3>Consultas del Paciente</h3>
+      <h3>Tus Consultas</h3>
       <div>  
-        <input type="text" [(ngModel)]="dniPaciente" placeholder="Ingrese el DNI del paciente">
-        <button style="margin-top: 10px;" (click)="buscarDescripcionPorDni()">Buscar Descripción Consultas</button>  
+        <input type="text" [(ngModel)]="dniPaciente" placeholder="Ingrese su DNI">
+        <button style="margin-top: 10px;" (click)="buscarDescripcionPorDni()">Buscar Consultas</button>  
         <div *ngIf="descripcionConsulta.length >0">
           <h4>Su historial de consultas:</h4>
           <ul>
